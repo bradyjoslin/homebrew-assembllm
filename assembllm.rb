@@ -5,20 +5,20 @@
 class Assembllm < Formula
   desc ""
   homepage "https://github.com/bradyjoslin"
-  version "0.6.1"
+  version "0.7.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/bradyjoslin/assembllm/releases/download/v0.6.1/assembllm_Darwin_x86_64.tar.gz"
-      sha256 "d88ed1e8a8c91ac88faa4b2cca3aaaa683c08d04ed7024faa6561a8d5f0b372c"
+      url "https://github.com/bradyjoslin/assembllm/releases/download/v0.7.0/assembllm_Darwin_x86_64.tar.gz"
+      sha256 "6731a24ccd216677dae0f05eba0a6df466632a700b97c2f3608cc4f4f319091a"
 
       def install
         bin.install "assembllm"
       end
     end
     on_arm do
-      url "https://github.com/bradyjoslin/assembllm/releases/download/v0.6.1/assembllm_Darwin_arm64.tar.gz"
-      sha256 "5ecdd4e2deb6d8326bfda3b6bafa8f865c8be641865fbcc625c5844ceb6ee04f"
+      url "https://github.com/bradyjoslin/assembllm/releases/download/v0.7.0/assembllm_Darwin_arm64.tar.gz"
+      sha256 "2ac4ec56f10af24f483d66b51616fd95a3f5d7a85dc2b6a8e88e109807aa5193"
 
       def install
         bin.install "assembllm"
@@ -29,8 +29,8 @@ class Assembllm < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/bradyjoslin/assembllm/releases/download/v0.6.1/assembllm_Linux_x86_64.tar.gz"
-        sha256 "480532c7f35b298d1d90a3d62e3a3c2c3585c507957e103af47eab2f55bda9cd"
+        url "https://github.com/bradyjoslin/assembllm/releases/download/v0.7.0/assembllm_Linux_x86_64.tar.gz"
+        sha256 "b36cd48200d1950e108ecda2c47a497cb7e623460ecff9945bfe0a66fa0985c4"
 
         def install
           bin.install "assembllm"
@@ -39,8 +39,8 @@ class Assembllm < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/bradyjoslin/assembllm/releases/download/v0.6.1/assembllm_Linux_arm64.tar.gz"
-        sha256 "d190ef0b0c4854fa8ad2d6dc5df379d16d23a16c57bc5dfcc7a4fcd7a7a00e62"
+        url "https://github.com/bradyjoslin/assembllm/releases/download/v0.7.0/assembllm_Linux_arm64.tar.gz"
+        sha256 "436389f826873e39cb4a5ec5b4491a9ef96581fe4021fbfdf0c09552f456be95"
 
         def install
           bin.install "assembllm"
